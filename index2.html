@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Counter</title>
+    <style>
+        #video-container {
+            position: absolute;
+        }
+        #counter {
+            text-color:green;
+           
+            top: 50px;
+            left: 10px;
+            color: black;
+            font-size: 20px;
+            background-color: red;
+            padding: 15px 10px;
+            border-radius: 5px;
+        }
+        
+
+        #video{
+          
+            
+        }
+        #lights-container{
+            background-color:black;
+            padding:10px;
+            margin-left:20cm;
+            width:2cm;
+            height:7cm;
+            border-radius:2cm;
+
+
+            
+        }
+       
+        .light{
+            width: 2cm;
+            height: 2cm;
+            border-radius: 50%;
+            margin-bottom:0.5cm;
+        }
+        #message{
+            background-color:gray;
+            position: absolute;
+            top: 2cm;
+            left: 24cm;
+            padding: 200px 300px;
+            border-radius: 5px;
+            font-size: 60px;
+            text-color:green;
+            text-align:margin;
+            length:20cm;
+            width:15cm;
+        }
+      .own{
+             
+        }
+        #simulate{
+            position:absolute;
+                   
+            float:right;
+           
+            display:flex;
+            margin-left:20cm;
+            
+
+            
+
+
+        }
+        
+    
+        
+        
+    </style>
+</head>
+<body>
+
+
+
+
+
+<div  id="message">
+
+</div>
+
+
+
+
+    <div id="video-container"> 
+        <video id="video"  width="640" height="480" autoplay></video><br><br>
+        <div id="counter">People Count: <span id="count">0</span></div>
+        
+
+       
+
+
+        
+       
+</video>
+
+</div>
+
+       
+
+
+
+
+</div>
+
+        <div id="lights-container">
+        
+        <div id="green"  class="light" ></div>
+        <div id="orange"  class="light" ></div>
+        <div id="red"  class="light"></div>
+         
+         </div>
+
+        
+    </div>
+        
+        
+ </div>
+   
+<script src="count.js"></script>
+<script src="roadstop.js"></script>
+
+
+
+
+</div>
+
+</body>
+</html>
